@@ -9,8 +9,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.use(require('./Routes/User.Routes'));
-app.use('/article', require('./Routes/Article.Routes'));
+app.use(require('./User.Routes'));
+app.use('/article', require('./Article.Routes'));
 
 //Connect MongoDB
 mongoose.connect(

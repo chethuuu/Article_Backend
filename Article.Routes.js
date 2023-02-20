@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const ArticleController = require('../Controllers/Article.Controller')
-const RequiredLogin = require('../Middleware/Auth')
+const ArticleController = require('./Article.Controller')
+const RequiredLogin = require('./Auth')
 
 //routes
 router.route('/').post(RequiredLogin, ArticleController.CreateArticle);

@@ -1,4 +1,4 @@
-const Post = require('../Model/Article.Model');
+const Post = require('./Article.Model');
 
 const PostController = {
 
